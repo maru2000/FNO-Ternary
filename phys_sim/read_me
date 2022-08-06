@@ -1,1 +1,48 @@
+Steps:
 
+1. Input Params- 
+ 
+ nx "xx" (x resolution)
+ ny "yy" (y resolution)
+ num_steps "" (Total number of steps needed)
+ print_steps "" (Number of steps to print from first to last step - for step size)
+ alloycomp_b "" (Initial composition of b phase)
+ alloycomp_c "" (Initial composition of c phase)
+ 
+ these are the parameters to change
+ 
+2. PostProc.in -
+ 
+ nx "xx"
+ ny "yy"
+ start ""
+ steps "" (take from print_steps)
+ finish ""
+ 
+ set according to the values in InputParams
+ 
+3. automate.sh - 
+ 
+ var = 1111 (random seed for generating data)
+ ind = 0 (number of batches)
+ 
+ change 'ind' according to number of batches needed for the complete dataset in the line
+ while [ $ind -le 'ind']
+ 
+run the following command:
+bash ./automate.sh
+
+this will generate the data images in binary file format
+
+use the python code in process_2.py to create a ''.npy file for the required dataset to use for
+the model and prediction
+
+
+4. process_2.py
+ 
+ change values in range:
+ ex if image size generated in (64,64)
+ for j in range(64):
+ "
+ for j in range(65, 129):
+ "
