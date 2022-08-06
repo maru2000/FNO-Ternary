@@ -1,0 +1,17 @@
+The name of this file is : OutParams 
+Input is from            : InputParams 
+nx = 256
+ny = 256
+del_x = 1.000000
+del_y = 1.000000
+del_t = 1.000000
+noise_level = 0.010000
+Seed = -784
+num_steps = 600
+print_steps = 1
+composition_of_B=0.330000	composition_of_C=0.330000
+
+KAP_B=1.000000  KAP_C=1.000000  KAP_A=1.000000
+MBB=1.000000    MCC=1.000000     MBC=-0.500000
+Initial count = 0	 flag = 0
+Configuration is initialised by me
