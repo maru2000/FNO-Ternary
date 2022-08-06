@@ -1,0 +1,19 @@
+nx 256
+ny 256
+del_x 1.0
+del_y 1.0
+del_t 1.0
+noise_level 0.01
+SEED -784
+num_steps 600
+print_steps 1
+alloycomp_b 0.33
+alloycomp_c 0.33
+kb 1.0 kc 1.0 ka 1.0
+mb 1.0 mc 1.0 ma -0.5
+initcount 0
+flag 0
+fftw_flag 1
+
+
+
